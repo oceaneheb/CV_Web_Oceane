@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #1D1256;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h2 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(90deg, #C0EFFF 0%, #CFCFF6 21.19%, #D4CEEE 44.02%, #E4BFE1 78.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    /* border-image: linear-gradient(355deg,#7EC4F1,#6ACBEE,#625AD5,#B1398B); */
+    border-image-slice: 1;
+}
+
+#cercle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    /* border-image: conic-gradient(from 0deg,#7EC4F1,#6ACBEE,#625AD5,#B1398B) 1; */
+    /* box-shadow: 0 0 0 10px transparent, 0 0 0 20px transparent, 0 0 0 30px transparent, 0 0 0 40px transparent, 0 0 0 50px transparent, 0 0 0 60px transparent, 0 0 0 70px transparent, 0 0 0 80px transparent, 0 0 0 90px transparent, 0 0 0 100px transparent, 0 0 0 110px transparent, 0 0 0 120px transparent, 0 0 0 130px transparent, 0 0 0 140px transparent, 0 0 0 150px transparent, 0 0 0 160px transparent, 0 0 0 170px transparent, 0 0 0 180px transparent, 0 0 0 190px transparent, 0 0 0 200px transparent, inset 0 0 50px rgba(20, 137, 210, 0.5); */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 90px 2fr 1fr;
+    grid-template-rows: 982px;
+    margin: 100px;
+    margin: auto;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #07004D;
+    border-right: 12px solid transparent;
+    border-image: linear-gradient(180deg, #FD716A 0%, #F16082 19.17%, #D153AA 38.96%, #AA43E2 55.1%, #6B4FFE 76.56%, #216DF3 98.44%);
+    border-image-slice: 1;
+}
+
+#logo-rs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+    gap: 10px;
+}
+
+/* ----- Box 2 ----------*/
+/* Box2 > Paramètres généraux */
+#box2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 23% 45% 30%;
+    margin: 20px 40px;
+}
+
+/*----Box2 Bloc1----*/
+#box2-bloc1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#box2-bloc1 div:nth-child(2) div:first-child div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5F1FF;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: end;
+    font-size: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 0;
+    gap: 30px;
+}
+
+#box2-bloc1 div:nth-child(2) div:first-child div:first-child p {
+    display: block;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    border-left: solid; /*ne fonctionne pas*/
+}
+
+#box2-bloc1 div:nth-child(2) div:first-child p {
+    font-weight: 700;
+    font-size: 15px;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+#box2-bloc1 div:nth-child(2) div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #FFF2F3 0%, #FAEDF8 33.24%, #F4ECFD 62.9%, #EAEFFF 100%);
+    padding: 10px 15px;
+    margin-top: 45px;
+    width: 160px; /*à déplacer sur la droite*/
+}
+
+#box2-bloc1 div:nth-child(2) div:last-child p:first-child {
+    color: white;
+    border-radius: 20px;
+    padding: 7px 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FC706B 0%, #EA5D8A 25.42%, #BD4BC6 49.9%, #7A4CF8 73.85%, #266BF4 97.81%);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+}
+
+#box2-bloc1 div:nth-child(2) div:last-child p:last-child {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/*----Box2 Bloc2 ----*/
+#box2-bloc2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#training {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 5% 30% 23% 35%;
+    gap: 15px;
+    height: 350px;
+}
+
+#training div:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+/*---- Box2 Bloc2 Training CDA ----*/
+#training div:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #FFF2F0 0%, #F7EFF9 38.84%, #EDF2FE 72.49%, #E8F1FF 98.85%);
+    padding: 15px;
+}
+
+#training-cda :first-child {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#training-cda :first-child span{
+    background-color: #D76199;
+    padding: 4px;
+    color: white;
+}
+
+#training-cda :nth-child(2), #training-cda :nth-child(3) {
+    padding-left: 30px;
+}
+
+#training-cda :nth-child(2) {
+    margin-bottom: 10px;
+}
+
+/*#training-cda div {
+    display: flex;
+    flex-direction: row;
+}*/
+
+#training-cda :last-child {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#training-cda :last-child span {
+    background-color: #1D1256;
+    padding: 4px;
+    color: white;
+}
+
+/*---- Box2 Bloc2 Compétences PLus ----*/
+#training div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 4;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#training-competences-plus :first-child {
+    color: #D76199;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #D76199;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#training-competences-plus :nth-child(2) {
+    margin-bottom: 5px;
+}
+
+/*---- Box2 Bloc2 Apple Foundation Program ----*/
+#training div:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#training-afp-simplon :first-child {
+    color: #D76199;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #D76199;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#training-afp-simplon :nth-child(2) {
+    margin-bottom: 5px;
+}
+
+/*---- Box2 Bloc2 Mastère Market/Com ----*/
+#training div:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3 / 5;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#training-mastere-com :first-child {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#training-mastere-com :first-child span{
+    background-color: white;
+    border: 2px solid #D76199;
+    padding: 4px;
+    color: #D76199;
+}
+
+#training-mastere-com :nth-child(2), #training-mastere-com :nth-child(3) {
+    padding-left: 30px;
+}
+
+#training-mastere-com :nth-child(2) {
+    margin-bottom: 10px;
+}
+
+#training-mastere-com :last-child {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#training-mastere-com :last-child span {
+    background-color: white;
+    border: 2px solid #1D1256;
+    padding: 4px;
+}
+
+/* --------------------- */
+
+#box2-bloc3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#box2-bloc4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#box2-bloc5 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#box3 {
+    background: linear-gradient(180deg, #FFF2F2 0%, #FAEDF8 29.69%, #F7EBFC 48.44%, #F0EDFF 73.96%, #E9F0FF 100%);
+}
